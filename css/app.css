@@ -1,0 +1,119 @@
+.thumb {
+    height: 320px;
+}
+
+.thumb-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+    background-color: #fff;
+}
+
+.big-img>img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.caption {
+    bottom: 30px;
+    right: 30px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.error {
+    color: #f00
+}
+.loader-wrap{
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+}
+.loader {
+    border: 10px solid #f3f3f3; 
+    border-top: 10px solid #42b983; 
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: loader 2s linear infinite;
+  }
+  
+  @keyframes loader {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+@media screen and (max-width: 1680px) {
+    .thumb {
+        height: 280px;
+    }
+}
+
+
+@media screen and (max-width: 1600px) {
+    .thumb {
+        height: 250px;
+    }
+}
+
+
+@media screen and (max-width: 1440px) {
+    .thumb {
+        height: 220px;
+    }
+
+    .caption {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .thumb {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .thumb {
+        height: 280px;
+    }
+
+    .big-img>img {
+        min-height: 100%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .thumb {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .thumb {
+        height: 150px;
+    }
+
+    .caption {
+        bottom: 10px;
+        right: 10px;
+        padding: 10px;
+    }
+}
